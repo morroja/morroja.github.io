@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweater Punks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+        }
+
+        h1 {
+            font-family: 'Lavishly Yours', cursive;
+            font-size: 5em;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: #ff0040;
+        }
+
+        .tagline {
+            font-size: 1em;
+            margin-top: 10px;
+            color: #888;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0040;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color: #ff0040;
+            letter-spacing: 3px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .tour-date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 15px 0;
+            background: #1a1a1a;
+            border-left: 4px solid #ff0040;
+        }
+
+        .tour-date:hover {
+            background: #222;
+        }
+
+        .tour-location {
+            font-weight: bold;
+        }
+
+        .tour-venue {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1a1a1a;
+            margin-top: 60px;
+            border-top: 1px solid #333;
+        }
+
+        .social {
+            margin-top: 25px;
+        }
+
+        .social a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social a:hover {
+            color: #ff0040;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweater Punks</h1>
+        <p class="tagline">São Paulo, Brasil</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">À Propos</a>
+        <a href="#musica">Music</a>
+        <a href="#shows">Shows</a>
+        <a href="#contato">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="sobre">
+            <h2>À Propos</h2>
+            <p>Banda de punk rock de São Paulo.</p>
+        </section>
+
+        <section id="musica">
+            <h2>Music</h2>
+            <p><strong>Dernier Album:</strong> "Caos Urbano" (2024)</p>
+            <p>Disponível em todas as plataformas digitais.</p>
+        </section>
+
+        <section id="shows">
+            <h2>Próximos Shows</h2>
+            <div class="tour-date">
+                <div>
+                    <div class="tour-location">15 Out - São Paulo, SP</div>
+                    <div class="tour-venue">Clash Club</div>
+                </div>
+                <span>Ingressos</span>
+            </div>
+            <div class="tour-date">
+                <div>
+                    <div class="tour-location">28 Out - Rio de Janeiro, RJ</div>
+                    <div class="tour-venue">Circo Voador</div>
+                </div>
+                <span>Ingressos</span>
+            </div>
+            <div class="tour-date">
+                <div>
+                    <div class="tour-location">10 Nov - Curitiba, PR</div>
+                    <div class="tour-venue">Tork n' Roll</div>
+                </div>
+                <span>Ingressos</span>
+            </div>
+            <div class="tour-date">
+                <div>
+                    <div class="tour-location">25 Nov - Belo Horizonte, MG</div>
+                    <div class="tour-venue">Bar do Urso</div>
+                </div>
+                <span>Ingressos</span>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contact</h2>
+            <p>Email: contact@sweaterpunks.com</p>
+            <p>Booking: booking@sweaterpunks.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sweater Punks. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Spotify</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+</body>
+</html>
