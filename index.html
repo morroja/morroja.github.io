@@ -54,6 +54,32 @@
             color: #ff0040;
         }
 
+        .word-sweater {
+            animation: blinkSweater 4s infinite;
+        }
+
+        .word-punks {
+            animation: blinkPunks 4s infinite;
+        }
+
+        @keyframes blinkSweater {
+            0%, 22% {
+                opacity: 0;
+            }
+            25%, 100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blinkPunks {
+            0%, 47% {
+                opacity: 0;
+            }
+            50%, 100% {
+                opacity: 1;
+            }
+        }
+
         .tagline {
             font-size: 1em;
             margin-top: 10px;
@@ -163,7 +189,7 @@
 <body>
     <header>
         <img src="sweater-punks-hero.png" alt="Sweater Punks" class="hero-image">
-        <h1>Sweater Punks</h1>
+        <h1><span class="word-sweater">Sweater</span> <span class="word-punks">Punks</span></h1>
         <p class="tagline">São Paulo, Brasil</p>
     </header>
 
@@ -177,7 +203,7 @@
     <div class="content">
         <section id="sobre">
             <h2>À Propos</h2>
-            <p>Banda de punk rock de São Paulo.</p>
+            <p>Patches on patches on patches. São Paulo, Brasil.</p>
             <img src="sp-band.png" alt="Sweater Punks Band" class="band-photo">
         </section>
 
